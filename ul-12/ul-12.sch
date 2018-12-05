@@ -13737,6 +13737,12 @@ Gehäuse für Spannungsregler LD1117</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="LED3" library="led" deviceset="LED" device="3MM" value="3 mm bl"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="LED4" library="led" deviceset="LED" device="3MM" value="3 mm ge"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13901,6 +13907,18 @@ Gehäuse für Spannungsregler LD1117</description>
 <instance part="GND7" gate="1" x="447.04" y="88.9"/>
 <instance part="GND8" gate="1" x="469.9" y="88.9"/>
 <instance part="+3V1" gate="G$1" x="434.34" y="91.44" rot="R90"/>
+<instance part="+3V2" gate="G$1" x="411.48" y="48.26"/>
+<instance part="LED3" gate="G$1" x="505.46" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="503.174" y="70.358" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="507.873" y="75.692" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R16" gate="G$1" x="505.46" y="83.82" rot="R90"/>
+<instance part="LED4" gate="G$1" x="528.32" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="526.034" y="70.358" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="530.733" y="75.438" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R17" gate="G$1" x="528.32" y="83.82" rot="R90"/>
+<instance part="+3V3" gate="G$1" x="518.16" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -14579,9 +14597,9 @@ Gehäuse für Spannungsregler LD1117</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="J3" gate="A" pin="16"/>
-<wire x1="520.7" y1="99.06" x2="535.94" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="535.94" y1="99.06" x2="535.94" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="535.94" y1="134.62" x2="383.54" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="99.06" x2="538.48" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="99.06" x2="538.48" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="538.48" y1="134.62" x2="383.54" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="134.62" x2="383.54" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="383.54" y1="124.46" x2="386.08" y2="124.46" width="0.1524" layer="91"/>
@@ -14650,10 +14668,10 @@ Gehäuse für Spannungsregler LD1117</description>
 <junction x="370.84" y="111.76"/>
 <wire x1="370.84" y1="111.76" x2="340.36" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="111.76" x2="370.84" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="147.32" x2="541.02" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="541.02" y1="147.32" x2="541.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="147.32" x2="543.56" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="543.56" y1="147.32" x2="543.56" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="20"/>
-<wire x1="541.02" y1="93.98" x2="520.7" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="543.56" y1="93.98" x2="520.7" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -14678,10 +14696,10 @@ Gehäuse für Spannungsregler LD1117</description>
 <junction x="365.76" y="106.68"/>
 <wire x1="365.76" y1="106.68" x2="340.36" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="106.68" x2="365.76" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="152.4" x2="538.48" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="538.48" y1="152.4" x2="538.48" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="152.4" x2="541.02" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="152.4" x2="541.02" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="18"/>
-<wire x1="538.48" y1="96.52" x2="520.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="96.52" x2="520.7" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -14786,9 +14804,9 @@ Gehäuse für Spannungsregler LD1117</description>
 <wire x1="386.08" y1="96.52" x2="355.6" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="8"/>
 <wire x1="355.6" y1="96.52" x2="340.36" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="520.7" y1="109.22" x2="528.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="528.32" y1="109.22" x2="528.32" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="528.32" y1="162.56" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="109.22" x2="530.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="109.22" x2="530.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="162.56" x2="355.6" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="162.56" x2="355.6" y2="96.52" width="0.1524" layer="91"/>
 <junction x="355.6" y="96.52"/>
 </segment>
@@ -14812,9 +14830,9 @@ Gehäuse für Spannungsregler LD1117</description>
 <pinref part="X3" gate="G$1" pin="17"/>
 <wire x1="401.32" y1="115.57" x2="411.48" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="14"/>
-<wire x1="520.7" y1="101.6" x2="533.4" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="533.4" y1="101.6" x2="533.4" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="533.4" y1="124.46" x2="411.48" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="101.6" x2="535.94" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="101.6" x2="535.94" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="124.46" x2="411.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="411.48" y1="124.46" x2="411.48" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14834,9 +14852,9 @@ Gehäuse für Spannungsregler LD1117</description>
 <pinref part="X3" gate="G$1" pin="15"/>
 <wire x1="401.32" y1="120.65" x2="406.4" y2="120.65" width="0.1524" layer="91"/>
 <pinref part="J3" gate="A" pin="12"/>
-<wire x1="520.7" y1="104.14" x2="530.86" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="530.86" y1="104.14" x2="530.86" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="530.86" y1="129.54" x2="406.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="104.14" x2="533.4" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="533.4" y1="104.14" x2="533.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="533.4" y1="129.54" x2="406.4" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="129.54" x2="406.4" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14851,27 +14869,6 @@ Gehäuse für Spannungsregler LD1117</description>
 <wire x1="403.86" y1="132.08" x2="403.86" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="VCC"/>
-<pinref part="IC5" gate="G$1" pin="VCC"/>
-<wire x1="424.18" y1="40.64" x2="381" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="SCL"/>
-<pinref part="IC5" gate="G$1" pin="SCL"/>
-<wire x1="403.86" y1="35.56" x2="360.68" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="SDA"/>
-<pinref part="IC5" gate="G$1" pin="SDA"/>
-<wire x1="431.8" y1="27.94" x2="388.62" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="A0"/>
@@ -14883,21 +14880,19 @@ Gehäuse für Spannungsregler LD1117</description>
 <segment>
 <pinref part="IC4" gate="G$1" pin="A1"/>
 <pinref part="IC5" gate="G$1" pin="A1"/>
-<wire x1="403.86" y1="25.4" x2="360.68" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$51" class="0">
-<segment>
+<wire x1="403.86" y1="25.4" x2="401.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="25.4" x2="358.14" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="25.4" x2="358.14" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="A2"/>
 <pinref part="IC5" gate="G$1" pin="A2"/>
-<wire x1="403.86" y1="27.94" x2="360.68" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="WP"/>
-<pinref part="IC5" gate="G$1" pin="WP"/>
-<wire x1="403.86" y1="33.02" x2="360.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="27.94" x2="401.32" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="27.94" x2="360.68" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="25.4" x2="358.14" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="7.62" x2="401.32" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="7.62" x2="401.32" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="25.4" x2="401.32" y2="27.94" width="0.1524" layer="91"/>
+<junction x="358.14" y="25.4"/>
+<junction x="401.32" y="25.4"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -14906,12 +14901,32 @@ Gehäuse für Spannungsregler LD1117</description>
 <wire x1="454.66" y1="101.6" x2="439.42" y2="101.6" width="0.1524" layer="91"/>
 <label x="439.42" y="101.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="SCL"/>
+<wire x1="360.68" y1="35.56" x2="358.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="35.56" x2="358.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="53.34" x2="401.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="53.34" x2="401.32" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="SCL"/>
+<wire x1="401.32" y1="35.56" x2="403.86" y2="35.56" width="0.1524" layer="91"/>
+<label x="386.08" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="J2" gate="A" pin="14"/>
 <wire x1="462.28" y1="101.6" x2="477.52" y2="101.6" width="0.1524" layer="91"/>
 <label x="472.44" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="SDA"/>
+<wire x1="388.62" y1="27.94" x2="391.16" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="27.94" x2="391.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="50.8" x2="434.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="50.8" x2="434.34" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="SDA"/>
+<wire x1="434.34" y1="27.94" x2="431.8" y2="27.94" width="0.1524" layer="91"/>
+<label x="406.4" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -14927,6 +14942,69 @@ Gehäuse für Spannungsregler LD1117</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="436.88" y1="91.44" x2="441.96" y2="91.44" width="0.1524" layer="91"/>
 <junction x="441.96" y="91.44"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="VCC"/>
+<pinref part="IC5" gate="G$1" pin="VCC"/>
+<wire x1="381" y1="40.64" x2="381" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="381" y1="43.18" x2="411.48" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<wire x1="411.48" y1="45.72" x2="411.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="40.64" x2="424.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="43.18" x2="411.48" y2="43.18" width="0.1524" layer="91"/>
+<junction x="411.48" y="43.18"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="518.16" y1="71.12" x2="518.16" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="66.04" x2="505.46" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="66.04" x2="505.46" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="66.04" x2="528.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="528.32" y1="66.04" x2="528.32" y2="68.58" width="0.1524" layer="91"/>
+<junction x="518.16" y="66.04"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="WP"/>
+<wire x1="403.86" y1="33.02" x2="393.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="33.02" x2="393.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="45.72" x2="355.6" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="45.72" x2="355.6" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="WP"/>
+<wire x1="355.6" y1="33.02" x2="360.68" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="13"/>
+<wire x1="513.08" y1="101.6" x2="505.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="101.6" x2="505.46" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="505.46" y1="78.74" x2="505.46" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="6"/>
+<wire x1="520.7" y1="111.76" x2="528.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="528.32" y1="111.76" x2="528.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="528.32" y1="78.74" x2="528.32" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
